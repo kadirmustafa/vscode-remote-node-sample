@@ -7,21 +7,7 @@ var server = http.createServer(function (req, res) {   //create web server
         res.writeHead(200, { 'Content-Type': 'text/html' }); 
         
         // set response content    
-        res.write('<html><body><p>This is homert345634563456345e Page.</p></body></html>');
-        res.end();
-    
-    }
-    else if (req.url == "/student") {
-        
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('<html><body><p>This is student Page.</p></body></html>');
-        res.end();
-    
-    }
-    else if (req.url == "/admin") {
-        
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('<html><body><p>This is admin Page.</p></body></html>');
+        res.write('<html><body><p>This is Home From Container.</p></body></html>');
         res.end();
     
     }
@@ -30,6 +16,6 @@ var server = http.createServer(function (req, res) {   //create web server
 
 });
 
-server.listen(9000); //6 - listen for any incoming requests
+server.listen(9000); 
 
 console.log('Node.js web server at port 9000 is running..')
